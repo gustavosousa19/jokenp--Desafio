@@ -30,4 +30,4 @@
 </ul>
 <br>
 <br>
-<img src="" width="100px" hwigth="100px">
+<img src="https://github.com/gustavosousa19/jokenp--Desafio/blob/main/assets/desktop.png?raw=true" width="700px" hwigth="700px">
