@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JokenPô</title>
+</head>
+
+<body>
+
+    <div class="caixa hidden">
+        <h1>JokenPô</h1>
+
+        <div class="buttons">
+
+            <div class="restarts">
+                <button class="img-restart" onclick="reset('restart')"></button>
+                <p class="paragrafo-restarts">reset</p>
+            </div>
+
+            <div class="button-jokenpo">
+                <button class="button" id="rock" onclick="playHuman('rock')">&#x1F44A;</button>
+                <button class="button" id="paper" onclick="playHuman('paper')">&#x1f590;</button>
+                <button class="button" id="scissors" onclick="playHuman('scissors')">&#x270c;</button>
+            </div>
+
+        </div>
+
+        <p class="result"></p>
+
+        <div class="paragrafo">
+            <p class="your-score">Eu <span id="your-score">0</span></p>
+            <p class="vs">VS</p>
+            <p class="machine-score"> <span id="machine-score">0</span> Alexa</p>
+        </div>
+
+        <div class="info">
+            <p class="info-paragrafo">O JOGO ACABA: 10</p>
+        </div>
+    </div>
+
+
+    <div class="conteiner hidden">
+        <div class="parabens">
+            <p>Parabéns Você Ganhou!</p>
+            <img class="correto" src="./assets/pngegg.png">
+        </div>
+
+        <div>
+            <button class="revanche" onclick="revanche('game')">Jogar de novo</button>
+        </div>
+    </div>
+
+    <div class="conteiner-false hidden">
+        <div class="derrota">
+            <p>Você Perdeu!</p>
+            <img class="errado" src="./assets/pngegg (2).png">
+        </div>
+
+        <div>
+            <button class="revanche" onclick="revanche('game')">Jogar de novo</button>
+        </div>
+    </div>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
